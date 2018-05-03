@@ -390,11 +390,11 @@ console.log('\nLesson 01 - Homework:\n\n!!! Please answer the questions in this 
 
 // Task 01.03 - 2 points
 // Q: What simple data types are used in JS?
-// A: string, number, boolean
+// A: string, number, boolean, symbol, null , undefined
 
 // Task 01.04 - 2 points
 // Q: What complex data types are used in JS?
-// A: TODO
+// A: functions , objects
 
 // Task 01.05 - 3 points
 // Q: Please write a function which calculates the difference between two numbers
