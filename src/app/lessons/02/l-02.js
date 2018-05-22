@@ -269,6 +269,7 @@ console.log('\nTask 02.02:');
 // Task 02.02
 // 1 point
 // Using String.substring method, log to the console characters 5-8 of the 'helloWorld' string.
- 
+ let myString = "helloWorld"
+ console.log(myString.substring(4, 8));
 
 console.log('\nLesson 02 - Homework End.');
