@@ -353,6 +353,7 @@ console.h1('Tree constructor'); // просто заголовок
 
 function Tree(name) {
 	this.name = name;
+	console.log('New tree has been created and named ' + name)
 }
 
 var theTree = new Tree('Redwood');
@@ -523,7 +524,7 @@ console.h1('Task 05.01');
 // Запиши її назву у нову глобальну змінну 'createdByConstructor'.
 // TODO: пиши свій код тут:
 
-let createdByConstructor;
+let createdByConstructor = 'birthdayDate';
 
 if (createdByConstructor && createdByConstructor === 'birthdayDate') {
 	console.log('\n\tThanks! This task is done');
@@ -541,18 +542,18 @@ console.log('\n\tPlease implement this task and few tests to check it');
 // 1. var a;
 // 2. var b = 10;
 // 3. const c = "20";
-// 4. d = function(){};
+// 4. d = function(){};   <= THIS
 // 
 // 
 // 05.02.2 Створи змінні наступних типів. Для тих типів, де це неможливо, напиши коментар "Типу не існує"
 // 
-// 1. string
-// 2. char
-// 3. int
-// 4. float
-// 5. boolean
-// 6. interface
-// 7. undefined
+// 1. string  -  var a = 'string';
+// 2. char  - Типу не існує
+// 3. int - Типу не існує
+// 4. float - Типу не існує
+// 5. boolean - var a = true; var b = false;
+// 6. interface - Типу не існує
+// 7. undefined - var a;
 // 
 // 
 // 05.02.3 Знайди тут оператор строгого порівняння та випишіть його:
@@ -560,20 +561,20 @@ console.log('\n\tPlease implement this task and few tests to check it');
 // 1. 'use strict'
 // 2. ==
 // 3. &&
-// 4. ===
+// 4. ===     <= THIS
 // 5. EQ
 // 
 // 
 // 05.02.4 Який з цих виразів є помилковим?
 // 
-// 1. x * y == z
+// 1. x * y == z     <= THIS
 // 2. x + y = z
 // 3. x = y + (z = i / (k = m * n))
 // 
 // 
 // 05.02.5 Який з цих операторів означає "логічне АБО"?
 // 
-// 1. ||
+// 1. ||       <= THIS
 // 2. OR
 // 3. |
 // 
@@ -582,20 +583,20 @@ console.log('\n\tPlease implement this task and few tests to check it');
 // 
 // 1. AND
 // 2. and
-// 3. &&
+// 3. &&       <= THIS
 // 4. &
 // 
 // 
 // 05.02.7 Чи правда, що оператор ‘typeof’ використовується для:
 // 
-// 1. Отримання назви типу?
-// 2. Отримання посилання на констуктор?
+// 1. Отримання назви типу?  ---- true
+// 2. Отримання посилання на констуктор?   ---- false
 // 
 // 
 // 05.02.8 Які з цих прикладів є невірним використанням оператора умовного присвоєння?
 // 
-// 1. var y = x := z | m;
-// 2. var y = x : z ? m;
+// 1. var y = x := z | m;      <= THIS
+// 2. var y = x : z ? m;      <= THIS
 // 3. var y = x ? z : m;
 // 
 // 
@@ -605,14 +606,14 @@ console.log('\n\tPlease implement this task and few tests to check it');
 // 1. (function w(){})()
 // 2. var function x(){}
 // 3. var z = new Function('argument', '// TODO')
-// 4. var y = function(){}
+// 4. var y = function(){}      <= THIS
 // 
 // 
 // 
 // 05.02.10 Де конкатенація рядків зроблена з помилкою?
 // 
 // 1. "str1" + "str2"
-// 2. "str1" ~ "str2"
+// 2. "str1" ~ "str2"      <= THIS
 // 3. "str1".concat("str2")
 // 3. String.concat("str1", "str2")
 
@@ -623,8 +624,12 @@ console.h1('Task 05.03');
 // записавши результуючий код тут.
 
 // TODO: пиши код тут:
-console.log('\n\tPlease implement this task');
-
+function Tree(name) {
+	this.name = name;
+	console.log('New tree has been created and named ' + this.name)
+}
+var newTree = new Tree('Big New Tree');
 
 
 console.h1('Lesson 05 - Homework End');
+
